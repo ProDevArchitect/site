@@ -1,0 +1,917 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gallery{
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-style:italic;
+}
+
+#carrusel{
+  margin-top: 120px;
+  margin-bottom: 100px;
+  padding: 50px;
+}
+
+.container-carousel {
+  position: relative;
+  width: 95%;
+  height: 600px;
+  background-color: #e0e0e0;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(19, 18, 18, 0.945);
+}
+
+.carruseles {
+  width: 1001%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(19, 18, 18, 0.945);
+}
+
+.slider-section {
+  width: calc(100% / 10);
+  height: 100%;
+}
+
+.slider-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.btn-left,
+.btn-right {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffffff81;
+  transform: translate(0,-50%);
+  transition: .5s ease;
+  user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+  background-color: #333333d4;
+  color: #fff;
+}
+
+.btn-left {
+  left: 10px;
+}
+
+.btn-right {
+  right: 10px;
+}
+
+html{
+    background-color: rgba(19, 18, 18, 0.945);
+    color: white;
+}
+
+header{
+    display: inline-flexbox;
+    width: 100%;
+    height: 95px;
+    background-color: rgb(14, 13, 13);
+    padding: 30px;
+}
+
+.llamanos{
+    display: inline-block;
+    text-align: right;
+    width: 650px;
+}
+
+.llamano{
+    text-decoration: none;
+    font-size: 23px;
+    background-color: rgb(14, 13, 13);
+    padding: 12px 17px;
+    border-radius: 10px;
+    border: 1px solid greenyellow;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.coffe{
+    display: inline-block;
+    width: 600px;
+    text-decoration: none;
+    color: white;
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.contenedor-imagen {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 640px;
+  }
+  
+  .contenedor-imagen::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.397);
+    /* Color y opacidad del oscurecimiento */
+  }
+  
+  .contenedor-imagen img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ajuste de tamaño para mantener la relación de aspecto */
+  }
+
+  h1{
+    font-size: 66px;
+    margin-bottom: 57px;
+    color: white;
+  }
+
+  .llamano2{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: rgb(134, 211, 19);
+    padding: 15px;
+    border-radius: 10px;
+    border: px solid rgb(137, 221, 10);
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+  }
+
+  #presentacion{
+    background-color: orangered;
+  }
+
+  .div-header{
+    position: absolute;
+    z-index: 100;
+    margin-left: 60px;
+    margin-top: 180px;
+    padding: 0 500px 50px 0px;
+    font-family:fantasy;
+  }
+
+  h2{
+    font-size: 26px;
+    margin-top: 24px;
+    color: white;
+    font-weight: lighter;
+  }
+
+  .img-random img{
+    width: 100%;
+    height: 850px;
+    padding: 100px 66px;
+  }
+
+  .img-random{
+    background-color: orangered;
+    margin: 0;
+  }
+
+  .div-sobre{
+    margin: 30px 50px;
+    padding: 60px 80px;
+    text-align: center;
+    font-weight: lighter;
+  }
+
+  .div-sobre h3{
+    font-size: 33px;
+    margin-bottom: 40px;
+    font-style: italic;
+    font-family:fantasy;
+  }
+
+  .div-sobre p{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: lighter;
+    font-family:fantasy;
+  }
+
+  .cont-servicios img {
+    width: 370px;
+    height: 215px;
+    border-radius: 15px;
+    margin: 0;
+    object-fit: cover;
+  }
+  
+  .servicios div {
+    max-width: 410px;
+    height: 430px;
+    margin: 30px 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 14px;
+    border: 0px solid rgba(0, 0, 0, 0.233);
+    display: inline-flex flexbox;
+  }
+
+  .servicios {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .servicios h4 {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .cont-servicios p {
+    font-size: 17px;
+    overflow: auto;
+    margin-bottom: 35px;
+    font-family: fantasy;
+  }
+
+  .cont-servicios h3 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+    font-family:'Oswald';
+  }
+
+  .mas-informacion{
+    text-decoration: none;
+    background:#0aca0a;
+    border-radius: 8px;
+    color:#FFFFFF;
+    border: 1px solid #0aca0a;
+    padding: 8px 12px;
+    font-size: 20px;
+    background-color: rgb(14, 13, 13);
+  }
+
+  .comentario{
+    margin-top: 43px;
+    padding: 145px 60px;
+    font-size: 35px;
+    text-align: center;
+    background-color: orangered;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  img{
+    width: 100%;
+  }
+
+  #formulario .comunicate{
+    display: inline-block;
+  }
+
+  .comunicate{
+    width: 700px;
+    height: 300px;
+    text-align: left;
+  }
+
+  .comunicate h3{
+    font-size: 40px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+  }
+
+  .comunicate p{
+    margin-top: 40px;
+    font-size: 20px;
+    width: 570px;
+    height: 300px;
+    text-align: left;
+    font-family: 'Arial Narrow Bold', sans-serif;
+  }
+
+  .formulario{
+    display: inline-block;
+    height: 200px;
+    width :400px;
+    display: inline-flex;
+    margin-top: 70px;
+  }
+
+  .formulario-total{
+    padding: 50px;
+    background-color: rgba(19, 18, 18, 0.945);
+    height: 450px;
+  }
+
+  .mensaje{
+    width: 550px;
+    height: 135px;
+    border-radius: 10px;
+    border: 0px solid black;
+    background-color: #3b3a3a;
+    margin-top: 10px;
+  }
+
+  .enviar{
+    border-radius: 5px;
+    border: 0px solid greenyellow;
+    background-color: #3b3a3a;
+    padding: 6px 12px;
+    font-size: 18px;
+  }
+
+  .nombre{
+    display: inline-block;
+  }
+
+  .formulario form{
+    width: 550px;
+    display: inline-block;
+    margin-left: 120px;
+  }
+
+  #email{
+    height: 30px;
+    width: 180px;
+    border: 0px solid black;
+    background-color: #3b3a3a;
+    border-radius: 5px;
+  }
+
+  #nombre{
+    height: 30px;
+    width: 180px;
+    border: 0px solid black;
+    background-color: #3b3a3a;
+    border-radius: 5px;
+  }
+
+  .email{
+    margin-left: 0px;
+  }
+
+  footer{
+    height: 280px;
+  }
+  .footer{
+    height: 110%;
+    background-color: orangered;
+    padding: 30px ;
+    font-family: fantasy;
+  }
+
+  .footer h4{
+    display: inline-block;
+    font-size: 35px;
+    margin-top: 30px;
+    width: 1100px;
+  }
+
+  .copy{
+    margin-top: 120px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  footer a{
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 27px;
+    color: white;
+  }
+
+  
+  @media (max-width: 960px){
+  
+    .descripcion{
+      display: inline-block;
+      width: 0px;
+      margin-right: 0px;
+      object-position: center;
+      white-space:pre-line;
+      font-size: 17px;
+      line-height: 30px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin-left: 0px;
+      margin-top: 20px;
+      height: 400px;
+      width: 99%;
+      text-align: center;
+      padding: 0 60px;
+    }
+  
+    .img-sobre-nosotros{
+      display: inline-block;
+      width: 95%;
+      height: 380px;
+      border-radius: 20px 0 20px 0;
+      margin: 0; position: absolute;
+      display: none;
+    }
+  
+    .div-sobre-nosotros{
+      height: 400px;
+      width: 100%;
+    }
+  
+    .contacto{
+      text-decoration: none;
+      font-size: 25px;
+      margin-left: 0px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .div-contacto{
+      margin-top: 135px;
+      margin-left: 0px;
+       text-align: center;
+    }
+
+    .comunicate{
+      display: block;
+      width: 400px;
+      height: 200px;
+      margin: 0;
+      font-size: 10px;
+      padding: 20px;
+      margin-top: 20px;
+      margin-bottom: 100px;
+    }
+
+    .comunicate h3{
+      font-size: 30px;
+      font-family: 'Arial Narrow Bold', sans-serif;
+    }
+  
+    .comunicate p{
+      margin-top: 40px;
+      font-size: 20px;
+      width: 99%;
+      height: 100px;
+      padding: 0;
+      text-align: left;
+      font-family: 'Arial Narrow Bold', sans-serif;
+      width: 300px;
+    }
+
+    .formulario{
+      display: block;
+      height: 200px;
+      width :400px;
+      margin-top: 0px;
+    }
+  
+    .formulario-total{
+      padding: 5px;
+      height: 700px;
+      text-align: center;
+      width: 100%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    
+  
+    .mensaje{
+      width: 240px;
+      height: 125px;
+      width: 100%;
+    }
+  
+    .nombre{
+      display: inline-block;
+    }
+  
+    .formulario form{
+      width: 455px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  
+    #email{
+      height: 30px;
+      width: 0px;
+      width: 100%;
+      display: block;
+    }
+
+    .div-form{
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    #nombre{
+      height: 30px;
+      width: 0px;
+      margin-left: 0;
+      margin: 0;
+      width: 0px;
+      display: block;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .email{
+      margin-top: 27px;
+      margin-left: 0;
+    }
+
+    .div-header{
+    position: absolute;
+    z-index: 20;
+    text-align: center;
+    margin-top: 80px;
+    padding: 0 0px;
+    flex-wrap: wrap;
+  }
+
+  
+
+  h1{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:400px;
+  }
+
+  h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 100px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  .cont-servicios img {
+    width: 380px;
+    height: 200px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.473);
+  }
+  
+  .servicios div {
+    max-width: 100%;
+    height: 100%;
+    margin: 30px 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 14px;
+    border: 0px solid rgba(0, 0, 0, 0.233);
+    display: inline-flex flexbox;
+    padding: 0 10px;
+  }
+  
+  
+  .servicios {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .servicios h4 {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .cont-servicios p {
+    font-size: 22px;
+    overflow: auto;
+    margin-bottom: 35px;
+  }
+
+  .cont-servicios h3 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+  }
+
+  .mas-informacion{
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .contenedor-imagen {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 500px;
+  }
+
+  .comentario{
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 30px;
+    height: 220px;
+  }
+
+  .footer h4{
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 60px;
+  }
+
+  .contacto2{
+    font-size: 20px;   
+    text-align: right; 
+    margin-top: -40px;
+  }
+
+  .copy{
+    margin-top: 90px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  h1{
+    font-size: 36px;
+    margin-bottom: 57px;
+    color: white;
+  }
+  
+  .llamano2{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: rgb(134, 211, 19);
+    padding: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+  }
+  
+  #presentacion{
+    background-color: orangered;
+  }
+  
+  .div-header{
+    position: absolute;
+    z-index: 100;
+    margin-left: 0px;
+    margin-top: 40px;
+    padding: 0;
+    font-family:fantasy;
+    text-align: center;
+    width: 99%;
+  }
+  
+  h2{
+    font-size: 23px;
+    margin-top: 24px;
+    color: white;
+    margin: 0;
+    font-weight: lighter;
+    margin-top: 37px;
+  }
+  
+  .img-random img{
+    width: 100%;
+    height: 450px;
+    padding: 50px 40px;
+  }
+  
+  .img-random{
+    background-color: orangered;
+    margin: 0;
+  }
+  
+  .div-sobre h3{
+    margin-top: 30px;
+  }
+  
+  .descripcion{
+    display: inline-block;
+    width: 0px;
+    margin-right: 0px;
+    object-position: center;
+    white-space:pre-line;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 0px;
+    margin-top: 60px;
+    height: 400px;
+    width: 99%;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 150px;
+  }
+
+  header{
+    display: inline-flexbox;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(14, 13, 13);
+    padding: 10px;
+    text-align: center;
+}
+
+.llamanos{
+    display: inline-block;
+    text-align: right;
+    width: 0px;
+    position: absolute;
+    display: none;
+    width: 99%;
+}
+
+.llamano{
+    text-decoration: none;
+    font-size: 23px;
+    background-color: rgb(14, 13, 13);
+    padding: 12px 17px;
+    border-radius: 10px;
+    border: 1px solid greenyellow;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 99%;
+}
+
+.coffe{
+    display: inline-block;
+    width: 99%;
+    text-decoration: none;
+    color: white;
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.contenedor-imagen {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 380px;
+  }
+
+  .container-carousel {
+    position: relative;
+    width: 95%;
+    height: 300px;
+    background-color: #e0e0e0;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(19, 18, 18, 0.945);
+  }
+
+  .img-random img{
+    width: 100%;
+    height: 450px;
+    padding: 45px 25px;
+  }
+  
+  .img-random{
+    background-color: orangered;
+    margin: 0;
+  }
+
+  .footer h4{
+    display: inline-block;
+    font-size: 25px;
+    margin-top: 10px;
+    width: 400px;
+  }
+
+  footer{
+    height: 150px;
+  }
+  .footer{
+    height: 110%;
+    background-color: orangered;
+    padding: 30px ;
+    font-family: fantasy;
+  }
+
+
+  .copy{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  footer a{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+  }
+
+  #nombre{
+    margin-left: 0;
+    width: 100%;
+  }
+
+  #email{
+    width: 100%;
+  }
+
+  #mensaje{
+    width: 100%;
+  }
+
+  .formulario{
+    width: 100%;
+  }
+
+  .formulario form{
+    width: 99%;
+    display: block;
+    margin-left: auto;
+    margin-top: auto;
+  }
+
+  .copy{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .servicios div {
+    max-width: 410px;
+    height: 510px;
+    margin: 30px 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 14px;
+    border: 0px solid rgba(0, 0, 0, 0.233);
+    display: inline-flex flexbox;
+  }
+
+  .servicios{
+    height: 1800px;
+  }
+  }
+
+  
+
+
+  html{
+    overflow-x: hidden;
+  }
+
+.servicios div{
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 94%;
+  }
+
+  .servicios {
+    width: 98.8%;
+    display: flex;
+    overflow-y: hidden;
+  }
+
+  img{
+    object-fit: cover;
+  }
+
+  body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evitar barras de desplazamiento horizontal */
+  }
+
+  body{
+    overflow-y: hidden;
+  }
+
+  .cont-servicios{
+    margin-bottom: 25px;
+  }

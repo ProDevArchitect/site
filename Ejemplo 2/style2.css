@@ -1,0 +1,647 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex: 0 0 100%;
+}
+
+html{
+  background:#dfdfdf;
+}
+
+img{
+    width: 100%;
+}
+
+.contenedor-imagen {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 700px;
+  }
+  
+  .contenedor-imagen::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(216, 208, 208, 0.829);
+    /* Color y opacidad del oscurecimiento */
+  }
+  
+  .contenedor-imagen img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ajuste de tamaño para mantener la relación de aspecto */
+  }
+
+  .div-header{
+    position: absolute;
+    z-index: 20;
+    text-align: center;
+    margin-top: 200px;
+    padding: 0 150px;
+    flex-wrap: wrap;
+  }
+
+  h1{
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:400px;
+  }
+
+  h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 100px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  .llama-ahora{ 
+    text-align: center;
+    text-decoration: none;
+    background:#0aca0a;
+    border-radius: 8px;
+    color:#FFFFFF;
+    border: 1px solid #0aca0a;
+    padding: 12px 16px;
+    font-size: 26px;
+    top: 200px;
+  }
+
+  #sobre-nosotros{
+    display: flexbox;
+  }
+
+  .sobre-nosotros{
+    display: block;
+    margin-left: 100px;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .descripcion{
+    display: inline-block;
+    width: 500px;
+    margin-right: 100px;
+    object-position: center;
+    white-space:pre-line;
+    font-size: 21px;
+    line-height: 32px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 60px;
+    margin-top: -100px;
+  }
+
+  .img-sobre-nosotros{
+    display: inline-block;
+    width: 600px;
+    height: 420px;
+    border-radius: 20px 0 20px 0;
+  }
+
+  .div-sobre-nosotros{
+    height: 400px;
+    width: 100%;
+  }
+
+  .contacto{
+    text-decoration: none;
+    text-decoration: none;
+    background:#0aca0a;
+    border-radius: 8px;
+    color:#FFFFFF;
+    border: 1px solid #0aca0a;
+    padding: 8px 12px;
+    font-size: 23px;
+    margin-left: 60px;
+  }
+
+  .div-contacto{
+    margin-top: 70px;
+    margin-left: 20px;
+  }
+
+  .cont-servicios img {
+    width: 380px;
+    height: 210px;
+  }
+  
+  .servicios div {
+    max-width: 410px;
+    height: 410px;
+    margin: 30px 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 14px;
+    border: 0px solid rgba(0, 0, 0, 0.233);
+    padding: 0;
+    display: inline-flex flexbox;
+  }
+  
+  
+  .servicios {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .servicios h4 {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .cont-servicios p {
+    font-size: 18px;
+    overflow: auto;
+    margin-bottom: 35px;
+  }
+
+  .cont-servicios h3 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+  }
+
+  .mas-informacion{
+    text-decoration: none;
+    background:#0aca0a;
+    border-radius: 8px;
+    color:#FFFFFF;
+    border: 1px solid #0aca0a;
+    padding: 8px 12px;
+    font-size: 20px;
+  }
+
+  .comentario{
+    padding: 100px;
+    font-size: 40px;
+    text-align: center;
+    background-color: #16b116;
+    font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  #formulario .comunicate{
+    display: inline-block;
+  }
+
+  .comunicate{
+    width: 700px;
+    height: 300px;
+    text-align: left;
+  }
+
+  .comunicate h3{
+    font-size: 40px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+  }
+
+  .comunicate p{
+    margin-top: 40px;
+    font-size: 20px;
+    width: 570px;
+    height: 300px;
+    text-align: left;
+    font-family: 'Arial Narrow Bold', sans-serif;
+  }
+
+  .formulario{
+    display: inline-block;
+    height: 200px;
+    width :400px;
+    display: inline-flex;
+    margin-top: 70px;
+  }
+
+  .formulario-total{
+    padding: 50px;
+    background-color: #0aca0a;
+    height: 450px;
+  }
+
+  .mensaje{
+    width: 550px;
+    height: 135px;
+    border-radius: 10px;
+    border: 0px solid black;
+    background-color: #1fa81f;
+  }
+
+  .enviar{
+    border-radius: 5px;
+      border: 0px solid black;
+      background-color: #1fa81f;
+      width: 80px;
+      height: 35px;
+      padding: 6px 9px;
+      font-size: 19px;
+  }
+
+  .nombre{
+    display: inline-block;
+  }
+
+  .formulario form{
+    width: 550px;
+    display: inline-block;
+    margin-left: 120px;
+  }
+
+  #email{
+    height: 30px;
+    width: 180px;
+    border: 0px solid black;
+    background-color: #1fa81f;
+    border-radius: 5px;
+  }
+
+  #nombre{
+    height: 30px;
+    width: 180px;
+    border: 0px solid black;
+    background-color: #1fa81f;
+    border-radius: 5px;
+  }
+
+  .email{
+    margin-left: 0px;
+  }
+
+  .footer{
+    height: 280px;
+    background-color: rgb(218, 31, 40);
+    padding: 30px;
+  }
+
+  .footer h4{
+    display: inline-block;
+    font-size: 35px;
+    margin-top: 60px;
+  }
+
+  .contacto2{
+    font-size: 24px;   
+    text-align: right; 
+    margin-top: -40px;
+  }
+
+  .copy{
+    margin-top: 90px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  
+
+  @media (max-width: 960px){
+
+    .sobre-nosotros{
+      display: block;
+      margin-left: 0px;
+      font-size: 32px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+    }
+  
+    .descripcion{
+      display: inline-block;
+      width: 0px;
+      margin-right: 0px;
+      white-space:pre-line;
+      font-size: 24px;
+      line-height: 25px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin-left: 0px;
+      margin-top: 20px;
+      height: 400px;
+      width: 98%;
+      text-align: center;
+      padding: 0 2px;
+      margin-bottom: 35px;
+    }
+  
+    .img-sobre-nosotros{
+      display: inline-block;
+      width: 95%;
+      height: 380px;
+      border-radius: 20px 0 20px 0;
+      margin: 0; position: absolute;
+      display: none;
+    }
+  
+    .div-sobre-nosotros{
+      height: 400px;
+      width: 100%;
+    }
+  
+    .contacto{
+      text-decoration: none;
+      background:#0aca0a;
+      border-radius: 8px;
+      color:#FFFFFF;
+      border: 1px solid #0aca0a;
+      padding: 4px 7px;
+      font-size: 23px;
+      margin-left: 0px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px 12px;
+    font-size: 23px;
+    }
+  
+    .div-contacto{
+      margin-top: 95px;
+      margin-left: 0px;
+       text-align: center;
+    }
+
+    .comunicate{
+      display: block;
+      width: 100%;
+      height: 220px;
+      margin: 0;
+      font-size: 10px;
+      text-align: center;
+    }
+
+    .comunicate h3{
+      font-size: 26px;
+      font-family: 'Arial Narrow Bold', sans-serif;
+      text-align: center;
+      margin-top: 18px;
+    }
+  
+    .comunicate p{
+      margin-top: 40px;
+      font-size: 21px;
+      width: 100%;
+      height: 350px;
+      padding: 0;
+      text-align: left;
+      font-family: 'Arial Narrow Bold', sans-serif;
+      text-align: center;
+    }
+
+    .formulario{
+      display: block;
+      height: 200px;
+      width :100%;
+      margin-top: 0px;
+    }
+  
+    .formulario-total{
+      padding: 1px;
+      background-color: #0aca0a;
+      height: 700px;
+      text-align: center;
+    }
+
+    
+  
+    .mensaje{
+      width: 240px;
+      height: 125px;
+      border-radius: 10px;
+      border: 0px solid black;
+      background-color: #1fa81f;
+      width: 98%;
+    }
+  
+    .enviar{
+      border-radius: 5px;
+      border: 0px solid black;
+      background-color: #1fa81f;
+      width: 80px;
+      height: 35px;
+      padding: 6px 9px;
+      font-size: 19px;
+    }
+  
+    .nombre{
+      display: inline-block;
+    }
+  
+    .formulario form{
+      width: 99%;
+      display: block;
+      margin-left: auto;
+      margin-top: auto;
+
+    }
+  
+    #email{
+      height: 30px;
+      border: 0px solid black;
+      background-color: #1fa81f;
+      border-radius: 5px;
+      width: 280px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 98%;
+    }
+
+    .div-form{
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-left: 5px;
+    }
+  
+    #nombre{
+      height: 30px;
+      border: 0px solid black;
+      background-color: #1fa81f;
+      border-radius: 5px;
+      width: 98%;
+      margin-bottom: 20px;
+    }
+
+    .div-header{
+    position: absolute;
+    z-index: 20;
+    text-align: center;
+    margin-top: 80px;
+    padding: 0 0px;
+    flex-wrap: wrap;
+  }
+
+  h1{
+    font-size: 38px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:400px;
+  }
+
+  h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 2px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  .llama-ahora{ 
+    text-align: center;
+    text-decoration: none;
+    background:#0aca0a;
+    border-radius: 8px;
+    color:#FFFFFF;
+    border: 1px solid #0aca0a;
+    padding: 10px 14px;
+    font-size: 23px;
+    top: 200px;
+  }
+
+  .cont-servicios img {
+    width: 98%;
+    height: 220px;
+    box-shadow: none;
+  }
+  
+  .servicios div {
+    max-width: 100%;
+    height: 500px;
+    margin: 30px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px;
+    border: 0px solid rgba(0, 0, 0, 0.233);
+    display: inline-flex flexbox;
+    padding: 0;
+    box-shadow: 0 0 0 black;
+  }
+  
+  
+  .servicios {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    box-shadow: 0 0 0 black;
+    padding: 0;
+  }
+  
+  .servicios h4 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .cont-servicios p {
+    font-size: 20px;
+    overflow: auto;
+    margin-bottom: 35px;
+  }
+
+  .cont-servicios h3 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 50px;
+  }
+
+  .mas-informacion{
+    text-decoration: none;
+    background:#0aca0a;
+    border-radius: 8px;
+    color:#FFFFFF;
+    border: 1px solid #0aca0a;
+    padding: 8px 12px;
+    font-size: 20px;
+  }
+
+  .contenedor-imagen {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 500px;
+  }
+
+  .comentario{
+    padding: 5px;
+    font-size: 22px;
+    text-align: center;
+    background-color: #16b116;
+    font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 30px;
+    height: 270px;
+  }
+  .footer{
+    height: 290px;
+    background-color: rgb(218, 31, 40);
+    padding: 30px;
+    text-align: center;
+  }
+
+  .footer h4{
+    display: inline-block;
+    font-size: 24px;
+    margin-top: 60px;
+  }
+
+  .contacto2{
+    font-size: 20px;   
+    text-align: right; 
+    margin-top: -40px;
+  }
+
+  .copy{
+    margin-top: 90px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .descripcion{
+    display: inline-block;
+    width: 0px;
+    margin-right: 0px;
+    object-position: center;
+    white-space:pre-line;
+    font-size: 19px;
+    line-height: 27px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 0px;
+    margin-top: 20px;
+    height: 460px;
+    width: 98%;
+    text-align: center;
+    padding: 0 0.3px;
+    max-width: 98%;
+  }
+  
+  .servicios div{
+    padding: 0 0 0 0;
+  }
+  }
+
+  html{
+    overflow-x: hidden;
+  }
+
+.servicios div{
+  overflow-y: hidden;
+  overflow-x: hidden;
+  }
+
+  img{
+    object-fit: cover;
+  }
+
+  body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evitar barras de desplazamiento horizontal */
+  }
+
+  .cont-servicios{
+    margin-bottom: 25px;
+  }
+

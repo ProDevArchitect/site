@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Coffee Shop</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="coffe">Coffee Shop</a>
+        <div class="llamanos">
+            <a href="#" class="llamano">Call Us</a>
+        </div>
+    </header>
+
+    <section id="presentacion">
+        <div class="div-header">
+            <h1>Enjoy the Best Coffee</h1>
+            <a href="" class="llamano2">Visit Us</a>
+            <h2>Delicious freshly brewed coffee and a cozy atmosphere. Come visit us today!</h2>
+        </div>
+        <div class="contenedor-imagen">
+            <img src="img/img-header.jpg" alt="Image">
+        </div>
+    </section>
+
+    <div class="img-random">
+        <img src="img/img-random.jpg" alt="">
+    </div>
+
+    <section id="sobre-nosotros">
+        <div class="div-sobre descripcion">
+            <h3>About Us</h3>
+            <p>At Coffee Shop, we are passionate about coffee. We take pride in offering our customers a unique experience with high-quality coffee. Our team of expert baristas strives to create delicious coffee drinks using carefully selected beans and artisanal brewing techniques. We are dedicated to providing exceptional service and a cozy environment for our customers to enjoy their favorite cup of coffee. Whether you’re looking for a perfectly brewed espresso, a frothy cappuccino, or a refreshing iced coffee, at Coffee Shop you’ll find the perfect drink to satisfy your coffee cravings.</p>
+        </div>
+    </section>
+
+    <section id="nuestros-servicios">
+        <div class="cont-servicios">
+            <h3>Our Services</h3>
+            <div class="servicios">
+                <div>
+                    <img src="img/img-mesa.jpg" alt="">
+                    <h4>Table Service</h4>
+                    <p>Enjoy our delicious drinks and food while relaxing comfortably in our café.</p>
+                    <a href="" class="mas-informacion">More Information</a>
+                </div>
+
+                <div>
+                    <img src="img/img-llevar.jpg" alt="" class="ser-img">
+                    <h4>Takeaway Service</h4>
+                    <p>Take the flavor and energy of our coffee with you wherever you go, enjoying your favorite drink anytime and anywhere.</p>
+                    <a href="" class="mas-informacion">More Information</a>
+                </div>
+
+                <div>
+                    <img src="img/img-caterin.jpg" alt="" class="ser-img">
+                    <h4>Catering Service</h4>
+                    <p>Make your event unforgettable with our catering service specializing in coffee and sweets that will delight your guests.</p>
+                    <a href="" class="mas-informacion">More Information</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="comentario">
+        <div class="comentario">
+            <p>Coffee Shop is my favorite place! They always surprise me with their delicious coffee and a cozy atmosphere. Thank you for making my mornings brighter!</p>
+            <p>- Sofia</p>
+        </div>
+    </section>
+
+    <section id="carrusel">
+        <div class="gallery">
+            <h3>Gallery</h3>
+        </div>
+
+        <div class="container-carousel">
+            <div class="carruseles" id="slider">
+                <section class="slider-section">
+                    <img src="img/carusel1.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="img/carusel2.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="img/carusel3.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="img/carusel4.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="img/carusel5.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="img/carusel6.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="img/carusel7.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="img/carusel8.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="img/carusel9.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="img/carusel10.jpg">
+                </section>
+            </div>
+            <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
+            <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
+        </div>
+    </section>
+
+    <section id="formulario">
+        <div class="formulario-total">
+            <div class="formulario">
+                <div class="comunicate">
+                    <h3>Contact Us</h3>
+                    <p>Use the contact form provided below to get in touch with us. We look forward to hearing from you and assisting with all your needs.</p>
+                </div>
+                <div class="div-form">
+                    <form action="procesar_formulario.php" method="post">
+                        <label for="nombre" class="email">Name:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+                        <label for="email" class="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <br><br>
+
+                        <label for="mensaje">Message:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="4" required class="mensaje"></textarea>
+                    
+                        <br><br>
+
+                        <input type="submit" value="Submit" class="enviar">
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    <footer style="height: 160px;">
+        <div class="footer" style="height: 160px;">
+            <h4>Coffee Shop</h4>
+            <a href="#header">Home</a>
+            <p class="copy" style="font-size: 24px; margin-top: 18px;">&copy; 2023 by Quality Web Design</p>
+        </div>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+</html>
